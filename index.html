@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <script defer src="./main.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<article class="name_container">
+  <div class="main_info">
+  <img src="./images/image-jeremy.png" alt="avatar" class="avatar">
+  <p class="text">Report for</p>
+  <p class="name">Jeremy Robson</p>
+  </div>
+  <button class="text_button">Daily</button>
+  <button class="text_button">Weekly</button>
+  <button class="text_button">Monthly</button>
+</article>
+
+<div class="small_containers">
+  <div class="up_containers">
+    <div class="background_work">
+      <img src="./images/icon-work.svg" class="picture_background">
+    <article class="work_container">
+      <div class="container_header">
+      <h1 class="h1">Work</h1>
+      <img src="./images/icon-ellipsis.svg" class="dot">
+      </div>
+      <div class="main_time">5hrs</div> <!-- daily -->
+      <div class="previous_time">7hrs</div> <!-- daily -->
+    
+    </article></div>
+
+    <div class="background_play">
+      <img src="./images/icon-play.svg" class="picture_background">
+    <article class="play_container">
+      <div class="container_header">
+      <h1 class="h1">Play</h1>
+      <img src="./images/icon-ellipsis.svg" class="dot" alt="dot">
+      </div>
+      <div class="main_time">10hrs</div> <!-- daily -->
+      <div class="previous_time">8hrs</div>
+    </article></div>
+
+    <div class="background_study">
+      <img src="./images/icon-study.svg" class="picture_background">
+    <article class="study_container">
+      <div class="container_header">
+      <h1 class="h1">Study</h1>
+      <img src="./images/icon-ellipsis.svg" class="dot" alt="dot">
+      </div>
+      <div class="main_time">4hrs</div> <!-- daily -->
+      <div class="previous_time">7hrs</div>
+    </article></div>
+  </div>
+  <div class="down_containers">
+
+    <div class="background_exercize">
+      <img src="./images/icon-exercise.svg" class="picture_background">
+    <article class="exercise_container">
+      <div class="container_header">
+
+      <h1 class="h1">Exercise</h1>
+      <img src="./images/icon-ellipsis.svg" class="dot" alt="dot">
+      </div>
+      <div class="main_time">4hrs</div> <!-- daily -->
+      <div class="previous_time">5hrs</div>
+    </article></div>
+
+    <div class="background_social">
+      <img src="./images/icon-social.svg" class="picture_background">
+    <article class="social_container">
+      <div class="container_header">
+      <h1 class="h1">Social</h1>
+      <img src="./images/icon-ellipsis.svg" class="dot" alt="dot">
+      </div>
+      <div class="main_time">5hrs</div> <!-- daily -->
+      <div class="previous_time">10hrs</div>
+    </article></div>
+
+    <div class="background_self_care">
+      <img src="./images/icon-self-care.svg" class="picture_background">
+    <article class="self_care_container">
+      <div class="container_header">
+      <h1 class="h1">Self Care</h1>
+      <img src="./images/icon-ellipsis.svg" class="dot" alt="dot">
+      </div>
+      <div class="main_time">2hrs</div> <!-- daily -->
+      <div class="previous_time">2hrs</div>
+    </article></div>
+  </div>
+</div>
+</body>
+</html>

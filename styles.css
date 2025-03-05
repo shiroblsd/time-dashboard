@@ -1,0 +1,193 @@
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Light-orange: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+
+    --Dark-blue: hsl(226, 43%, 10%);
+    --Very-Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+
+    --font-family: 'Rubik', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    height: 100%;
+}
+  
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    background-color: var(--Dark-blue);
+    font-family: var(--font-family);
+}
+.small_containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.up_containers, .down_containers {
+    display: flex;
+    flex-direction: row;
+}
+
+.name_container, .work_container, .play_container, .study_container, .exercise_container, .social_container, .self_care_container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.name_container {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-Dark-blue);
+    color: white;
+    border-radius: 0.6rem;
+    margin-right: 0.5rem;
+}
+
+.main_info {
+    background-color: var(--Blue);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    width: 4rem;
+    border-color: white;
+}
+
+.text {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    color: var(--Pale-Blue);
+}
+
+.name {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.text_button {
+    font-weight: 300;
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+    margin-bottom: 1rem;
+    border: none;
+    padding-left: 1.5rem;
+    width: 1rem;
+    padding-right: 3rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.text_button:hover {
+    color: white;
+}
+
+.work_container, .play_container, .study_container, .exercise_container, .social_container, .self_care_container {
+    padding: 1.5rem;
+    min-height: 8rem;
+    min-width: 12rem;
+    border-radius: 0.6rem;
+    background-color: var(--Very-Dark-blue);
+    margin-top: 2rem;
+}
+
+.work_container:hover, .play_container:hover, .study_container:hover, .exercise_container:hover, .social_container:hover, .self_care_container:hover {
+    background-color: var(--Blue);
+}
+
+.container_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.h1 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.dot {
+    height: 0.3rem;
+    width: 0.9rem;
+    margin-bottom: 1rem;
+    float: right;
+}
+
+.main_time {
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+}
+
+.previous_time {
+    font-size: 0.8rem;
+    color: var(--Desaturated-blue);
+}
+
+.background_exercize, .background_work, .background_play, .background_study, .background_social, .background_self_care {
+    position: relative;
+    height: calc(100% + 5rem); /* Увеличивает высоту на 2rem */
+    overflow: hidden;
+    width: 100%;
+    margin: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+.background_work {
+    background-color: var(--Light-orange);
+}
+
+.background_play {
+    background-color: var(--Soft-blue);
+}
+
+.background_study {
+    background-color: var(--Light-red);
+}
+
+.background_exercize {
+    background-color: var(--Lime-green);
+}
+
+.background_social {
+    background-color: var(--Violet);
+}
+
+.background_self_care {
+    background-color: var(--Soft-orange);
+}
+
+.picture_background {
+    position: absolute;
+    top: -1px;
+    right: 20px;
+    width: 2.3rem;
+    height: 2.3rem;
+    opacity: 0.3; /* Reduced opacity to make it darker */
+    filter: brightness(0.3); /* Reduces brightness, making the image darker */
+}
