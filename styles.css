@@ -70,7 +70,10 @@ body {
 
 .avatar {
     width: 4rem;
-    border-color: white;
+    height: 4rem; /* Чтобы сохранить пропорции */
+    border: 1.5px solid white;
+    border-radius: 50%; /* Делает картинку круглой */
+    display: block; /* Избегает лишних отступов */
 }
 
 .text {
@@ -186,8 +189,8 @@ body {
     position: absolute;
     top: -1px;
     right: 20px;
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 2.4rem;
+    height: 2.4rem;
     opacity: 0.3; /* Reduced opacity to make it darker */
     filter: brightness(0.3); /* Reduces brightness, making the image darker */
 }
